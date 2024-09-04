@@ -11,7 +11,7 @@ def vusionapiwebhook(req: func.HttpRequest) -> func.HttpResponse:
         logging.info(f"Mensaje recibido: {req_body}")
     except ValueError:
         return func.HttpResponse(
-            "Cuerpo del mensaje no es válido",
+            "Cuerpo del mensaje no es válido.",
             status_code=400
         )
 
